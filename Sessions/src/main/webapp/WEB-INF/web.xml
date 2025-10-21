@@ -22,6 +22,18 @@
   	<description></description>
   	<servlet-class>Profile</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Servlet1</servlet-name>
+  	<display-name>Servlet1</display-name>
+  	<description></description>
+  	<servlet-class>Servlet1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Servlet2</servlet-name>
+  	<display-name>Servlet2</display-name>
+  	<description></description>
+  	<servlet-class>Servlet2</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Loginservlet</servlet-name>
   	<url-pattern>/Loginservlet</url-pattern>
@@ -33,5 +45,13 @@
   <servlet-mapping>
   	<servlet-name>Profile</servlet-name>
   	<url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Servlet1</servlet-name>
+  	<url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Servlet2</servlet-name>
+  	<url-pattern>/Servlet2</url-pattern>
   </servlet-mapping>
 </web-app>

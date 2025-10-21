@@ -25,17 +25,21 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Test.Testing"/>
 			<item value="com.example"/>
 			<item value="BDD.BDDTest"/>
 		</list>
 		<list key="groupId">
-			<item value="WebSession"/>
+			<item value="Test"/>
 			<item value="WebCrud"/>
+			<item value="WebSession"/>
 			<item value="CrudOprations"/>
 			<item value="agevalidation"/>
 			<item value="BDD"/>
 		</list>
 		<list key="artifactId">
+			<item value="Testing"/>
+			<item value="WEBCRUD"/>
 			<item value="Sessions"/>
 			<item value="WebApplication"/>
 			<item value="CRUD"/>
