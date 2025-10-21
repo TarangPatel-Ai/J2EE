@@ -1,0 +1,11 @@
+package stepdefinitions;
+
+public class AddUserSteps {
+	
+	@Given("the user is on the add user page")
+	
+	@When("the user enters the user details and click on add button")
+	
+	@Then("the user added successfully message should be the output on the page")
+	
+}

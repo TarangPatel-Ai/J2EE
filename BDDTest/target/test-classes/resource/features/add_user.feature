@@ -1,0 +1,6 @@
+Feature: Adding a User
+
+  Scenario: Adding a new User
+    Given the user is on the add user page
+    When the user enters the user details and click on the add button
+    Then the user added successfully message should be the output on the page

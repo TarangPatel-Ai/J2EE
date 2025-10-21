@@ -1,0 +1,12 @@
+package com.example;
+
+public class Agevalidator {
+	
+	public String checkAge(int age) {}
+		if(age>18) {
+			return "Right to Vote";
+		}
+		else {
+			return "No right to Vote";
+		}
+}

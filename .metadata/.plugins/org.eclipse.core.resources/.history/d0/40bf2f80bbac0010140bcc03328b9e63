@@ -1,0 +1,8 @@
+package com.caltech.dbUtil;
+
+public class DbUtilHelperConstant {
+	
+	public static final String DRIVER_CLASS="";
+	
+	
+}

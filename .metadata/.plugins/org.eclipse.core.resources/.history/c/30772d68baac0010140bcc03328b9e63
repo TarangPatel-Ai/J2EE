@@ -1,0 +1,11 @@
+package com.caltech.dbUtil;
+
+import java.sql.Connection;
+
+public class DbUtil {
+	
+	public static Connection getConn() {
+		//Step-1: Register the vendor Driver
+		Class.forName("com.mysql.jdbc.Driver");
+	}
+}

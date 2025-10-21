@@ -1,0 +1,37 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AddUserPage {
+
+	private WebDriver driver;
+	
+	public AddUserPage() {
+		//Register the web browser
+    	WebDriverManager.firefoxdriver().setup();
+    	//Create an object to the Browser
+    	driver= new FirefoxDriver();
+	}
+	
+	public void navigateTo() {
+		driver.get("http://localhost:4200/clients");
+	}
+	
+	public void enterUserDetails() {
+		driver.findElement(By.id("clientname")).sendKeys("Arvindbhai Patel");
+		driver.findElement(By.id("clientemail")).sendKeys("arvind@gmail.com");
+		driver.findElement(By.id("clientaddress")).sendKeys("Vasna Borsad");
+		driver.findElement(By.id("password")).sendKeys("123456");
+		driver.findElement(By.id("rpassword")).sendKeys("123456");
+		driver.findElement(By.id("submitdata")).click();
+		
+	}
+	
+	public String isProductAdded() {
+		
+	}
+}

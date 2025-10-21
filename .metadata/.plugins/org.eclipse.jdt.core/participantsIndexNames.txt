@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2840187749.index
+\WebApplication\src\main\resources
+G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2589160788.index
+\Sessions\src\main\resources

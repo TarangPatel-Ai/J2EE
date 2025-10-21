@@ -1,0 +1,57 @@
+package com.caltech.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.caltech.dbUtil.DbUtil;
+import com.caltech.pojo.Student;
+
+public class StudentDAO {
+	
+	public int insertStudentintodb(Student student) throws ClassNotFoundException, SQLException {
+		Connection con = DbUtil.getConn();
+		if(con!=null) {
+			System.out.println("Database Connect Successfully");
+		}else {
+			System.out.println("Database Not connected");
+		}
+		//prepare statement for Database ---- Statement, PreparedStatement
+		//Statement st = con.createStatement();	
+		//String sql = "insert into Student values(" +student.getSid() + ",'" +student.getSname()+"','"+student.getSemail()+"')";
+		String sql = "insert into Student values(?,?,?)";
+		PreparedStatement ps = con.prepareStatement(sql);
+		//System.out.println(sql);
+		ps.setInt(1, student.getSid());
+		ps.setString(2, student.getSname());
+		ps.setString(3, student.getSemail());
+		
+		int i = ps.executeUpdate(); //the number of rows
+		//insert, update, delete---executeUpdate 
+		return i;
+		
+	
+	}
+	
+	public void retreiveStudentData() throws SQLException, ClassNotFoundException {
+		Connection con = DbUtil.getConn();
+		if(con!=null) {
+			System.out.println("Database Connect Successfully");
+		}else {
+			System.out.println("Database Not connected");
+		}
+		//prepare statement for Database ---- Statement, PreparedStatement
+		//Statement st = con.createStatement();
+		String sql = "select * from Student";
+		PreparedStatement ps = con.prepareStatement(sql);
+		//System.out.println(sql);
+		ResultSet rs = ps.executeQuery(); //Select
+		//in rs object we get the table object
+		
+		while(rs.next()) { //Whether the row has data or not
+			System.out.println(rs.getInt("sid")+" " + rs.getString("sname")+" "+ rs.getString("semail"));
+		} 
+	}
+}

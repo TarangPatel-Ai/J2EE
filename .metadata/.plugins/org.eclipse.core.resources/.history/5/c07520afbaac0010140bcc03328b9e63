@@ -1,0 +1,15 @@
+package com.caltech.dbUtil;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DbUtil {
+	
+	public static Connection getConn() throws ClassNotFoundException {
+		//Step-1: Register the vendor Driver
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		//Step-2: Connection with Database-> DBUrl, Username, Password
+		Connection con = DriverManager.getConnection("root", "MTpatel@1012");
+	}
+}

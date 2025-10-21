@@ -1,0 +1,27 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.AddUserPage;
+
+public class AddUserSteps {
+private AddUserPage adduser = new AddUserPage();	
+	
+	@Given("the user is on the add user page")
+	public void navigateTouserpage() {
+		adduser.navigateTo();
+	}
+	
+	@When("the user enters the user details and click on add button")
+	public void enterUserDetails() {
+		adduser.enterUserdetails();
+	}
+	
+	
+	@Then("the page should be referesh automatically")
+	public void addedSuccessfully() {
+	
+		adduser.closeBrowser();
+	}
+}

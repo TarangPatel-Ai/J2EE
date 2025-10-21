@@ -1,0 +1,31 @@
+package com.caltech.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.caltech.dbUtil.DbUtil;
+import com.caltech.pojo.Student;
+
+public class StudentDAO {
+	
+	public int insertStudentintodb(Student student) throws ClassNotFoundException, SQLException {
+		Connection con = DbUtil.getConn();
+		if(con!=null) {
+			System.out.println("Database Connect Successfully");
+		}else {
+			System.out.println("Database Not connected");
+		}
+		//prepare statement for Database ---- Statement, PreparedStatement
+		Statement st = con.createStatement();
+		String sql = "insert into Student values(" +student.getSid() + ",'" +student.getSname()+"','"+student.getSemail()+"')')";
+		System.out.println(sql);
+		
+		//insert, update, delete---executeUpdate 
+		return st.executeUpdate(sql); //the number of rows
+		
+	
+	}
+	
+	
+}

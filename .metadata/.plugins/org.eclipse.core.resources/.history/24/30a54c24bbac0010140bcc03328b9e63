@@ -1,0 +1,12 @@
+package com.caltech.main;
+
+import com.caltech.dbUtil.DbUtil;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = DbUtil.getConn();
+	}
+
+}

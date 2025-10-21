@@ -1,0 +1,15 @@
+package com.caltech.main;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.caltech.dbUtil.DbUtil;
+
+public class StudentMain {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

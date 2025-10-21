@@ -1,0 +1,21 @@
+package com.caltech.main;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.caltech.dao.StudentDAO;
+import com.caltech.dbUtil.DbUtil;
+import com.caltech.pojo.Student;
+
+public class StudentMain {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		StudentDAO dao = new StudentDAO();
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	Enter number a<input type="text" name="noa"><br><br>
+	Enter number b<input type="text" name="nob"><br><br>
+</form>
+</body>
+</html>

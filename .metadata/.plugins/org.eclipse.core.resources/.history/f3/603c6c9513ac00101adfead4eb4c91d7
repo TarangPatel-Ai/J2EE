@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AddUserPage {
+
+	private WebDriver driver;
+	
+	public AddUserPage() {
+		//Register the web browser
+    	WebDriverManager.firefoxdriver().setup();
+    	//Create an object to the Browser
+    	driver= new FirefoxDriver();
+	}
+	public void navigateTo() {
+		
+	}
+}

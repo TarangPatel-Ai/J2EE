@@ -1,0 +1,58 @@
+package com.caltech.main;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.caltech.dao.StudentDAO;
+import com.caltech.dbUtil.DbUtil;
+import com.caltech.pojo.Student;
+
+public class StudentMain {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		StudentDAO dao = new StudentDAO();
+		Scanner sc = new Scanner(System.in);
+		
+		Student student = new Student();
+		
+		System.out.println("Enter Student Id");
+		student.setSid(sc.nextInt());
+		
+		System.out.println("Enter Student Name");
+		student.setSname(sc.next());
+		
+		System.out.println("Enter Student Email");
+		student.setSemail(sc.next());
+		
+		int result = dao.insertStudentintodb(student);
+		
+		if(result>0) {
+			System.out.println("Record Add Successfully");
+		}
+		else {
+			System.out.println("Something Wrong Please try again...!");
+		}
+		
+		System.out.println("Enter Student Id for delete");
+		int deleteId = sc.nextInt();
+		dao.deleteStudentData(deleteId);
+		
+		// Update a student (optional, added for completeness)
+        System.out.println("Enter Student Id to Update");
+        int updateId = sc.nextInt();
+        sc.nextLine(); // Clear the newline character
+
+        System.out.println("Enter New Student Name");
+        String newName = sc.nextLine();
+
+        System.out.println("Enter New Student Email");
+        String newEmail = sc.nextLine();
+
+        dao.updateStudentData(updateId, newName, newEmail);
+		
+		dao.retreiveStudentData();
+	}
+
+}

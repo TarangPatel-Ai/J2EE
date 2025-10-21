@@ -1,0 +1,20 @@
+package com.example;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({})
+public class AgeTest {
+
+		@Test
+		public void test() {
+			Agevalidator agecheck = new Agevalidator();
+			assertEquals(agecheck.checkAge(20), "No Right to Vote");
+		}
+	
+}
