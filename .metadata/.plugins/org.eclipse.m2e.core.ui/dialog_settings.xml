@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\Simpli Learn Code\J2EE\WEBCRUD"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,11 +26,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="JSP.JSPEX"/>
 			<item value="Test.Testing"/>
 			<item value="com.example"/>
 			<item value="BDD.BDDTest"/>
 		</list>
 		<list key="groupId">
+			<item value="JSP"/>
 			<item value="Test"/>
 			<item value="WebCrud"/>
 			<item value="WebSession"/>
@@ -38,6 +41,7 @@
 			<item value="BDD"/>
 		</list>
 		<list key="artifactId">
+			<item value="JSPEX"/>
 			<item value="Testing"/>
 			<item value="WEBCRUD"/>
 			<item value="Sessions"/>

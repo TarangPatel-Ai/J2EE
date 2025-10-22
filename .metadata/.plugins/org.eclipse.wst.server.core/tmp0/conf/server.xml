@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WEBCRUD" path="/WEBCRUD" reloadable="true" source="org.eclipse.jst.j2ee.server:WEBCRUD"/></Host>
+      <Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WEBCRUD" path="/WEBCRUD" reloadable="true" source="org.eclipse.jst.j2ee.server:WEBCRUD"/><Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSPEX" path="/JSPEX" reloadable="true" source="org.eclipse.jst.j2ee.server:JSPEX"/><Context docBase="G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSPSTUD-Project" path="/JSPSTUD-Project" reloadable="true" source="org.eclipse.jst.j2ee.server:JSPSTUD-Project"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -3,5 +3,9 @@ G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\
 \Testing\src\main\resources
 G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2840187749.index
 \WebApplication\src\main\resources
+G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2690615182.index
+\JSPEX\src\main\resources
+G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\553070117.index
+\JSPSTUD-Project\src\main\java
 G:\Simpli Learn Code\J2EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2589160788.index
 \Sessions\src\main\resources
